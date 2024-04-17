@@ -5,8 +5,8 @@ public class StepTracker
  private int totalSteps;
  private int numActive;
  private int numDays;
-} 
-public StepTracker (int n)
+
+public StepTracker(int n)
  {
   minimumSteps = n;
   totalSteps = 0;
@@ -17,7 +17,7 @@ public void addDailySteps(int steps)
  { 
   totalSteps = steps + totalSteps;
   numDays++;
-  if (numDays>=minimumSteps)
+  if (numDays >= minimumSteps)
    numActive++;
 }
 public int activeDays()
